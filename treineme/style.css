@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif
 }
 
 .page {
@@ -16,7 +17,22 @@ body {
   margin-bottom: 55px;
 }
 
+h1 {
+  font-size: 49px;
+  line-height: 56px;
+  color: #1F1534;
+
+  font-weight: normal;
+  font-family: 'Mulish', sans-serif;
+  width: 490px;
+}
+
+h1 span {
+  color: #89C5CC;
+}
+
 ul {
+  font-family: 'Mulish', sans-serif;
   display: flex;
   gap: 48px;
   list-style: none;
@@ -24,6 +40,42 @@ ul {
   padding: 0;
 }
 
-ul a {
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  color: #1F1534;
   text-decoration: none;
+}
+
+ul li a:hover {
+  font-weight: bold;
+}
+
+section, p {
+  font-size: 14px;
+  color: #7D7987;
+  line-height: 28px;
+  margin: 40px 0;
+}
+
+button {
+  text-transform: uppercase;
+  color: #F9F9F9;
+  font-family: "Open Sans", sans-serif
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+
+  text-align: center;
+  margin-top: 82px;
+}
+
+footer a {
+  font-weight: bold;
 }
