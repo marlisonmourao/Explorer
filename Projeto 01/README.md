@@ -1,4 +1,4 @@
-<h1 align="center"> Desafio 01 </h1>
+<h1 align="center"> Projeto 01 </h1>
 
 <p align="center">Primeiro estágio Explorer pra praticar conceitos basícos de HTML e CSS <br/>
 

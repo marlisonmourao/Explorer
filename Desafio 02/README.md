@@ -1,6 +1,6 @@
-<h1 align="center"> Projeto 02 </h1>
+<h1 align="center"> Desafio 02 </h1>
 
-<p align="center">Segundo estágio Explorer pra praticar conceitos basícos de HTML e CSS <br/>
+<p align="center">Segundo Desafio Explorer pra praticar conceitos basícos de HTML e CSS <br/>
 
 
 <p align="center">
@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src="../.github/projeto02.png" width="100%">
+  <img alt="desafio 02" src="../.github/desafio02.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -29,11 +29,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projeto para o aprendizado de HTML e CSS
+Segundo desafio proposto pelo explorer da Rocketseat
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/oKfIeCgBcwtTtJ3X9ddJzS/Explorer---Projeto-02-(Copy)-(Copy)?node-id=1%3A5&t=M7kW2nOXLiitPcmc-0. É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](figma.com/file/euX4U7htMC0nwjszTuY3C7/Explorer-(Copy)?node-id=0%3A1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ---
 
