@@ -149,3 +149,25 @@ form .fieldset-wrapper legend {
   color: #535971;
 }
 
+footer {
+  height: 160px;
+  background-color: #535971;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  padding: 0 71px;
+
+  display: grid;
+  place-items: center;
+}
+
+footer button {
+  background: #FF5374;
+  color: #FFFFFF;
+  font-family: 'Staatliches';
+  font-size: 20px;
+  line-height: 26px;
+  width: 100%;
+  height: 55px;
+  border-radius: 20px;
+}
+
