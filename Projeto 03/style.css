@@ -93,6 +93,7 @@ fieldset legend {
 .input-wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 24px;
 }
 
 .input-wrapper label,
@@ -229,6 +230,10 @@ footer .button {
 
 footer .button:hover {
   background: #02ba55;
+}
+
+input:invalid {
+  border: 1px solid #FF1010;
 }
 
 
