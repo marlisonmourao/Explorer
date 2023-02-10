@@ -1,6 +1,6 @@
 <h1 align="center"> Projeto 02 </h1>
 
-<p align="center">Segundo estágio Explorer pra praticar conceitos basícos de HTML e CSS <br/>
+<p align="center">Terceiro Desafio do Explorer pra praticar conceitos basícos de HTML e CSS <br/>
 
 
 <p align="center">
@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src="../.github/projeto02.png" width="100%">
+  <img alt="projeto DevLinks" src="../.github/desafio-form.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -33,7 +33,7 @@ Projeto para o aprendizado de HTML e CSS
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/28KU7YwAhQFHEKqRBe4D6i/Explorer-Stage-03-Projeto-01-(Copy)?node-id=0%3A1&t=N8u4psA5NmxBWA8W-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/muI97lmPeh2akXsfMqpKaE/Stage-03---Formul%C3%A1rio-intermedi%C3%A1rio-(Copy)-(Copy)?node-id=3%3A4&t=N8u4psA5NmxBWA8W-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ---
 
