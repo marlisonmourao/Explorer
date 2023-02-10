@@ -54,8 +54,12 @@ header p {
 }
 
 .page form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
   margin-top: 58px;
-  min-height: 400px;
+  min-height: 000px;
   background-color: #FFFFFF;
 
   border-radius: 20px 20px 0 0;
@@ -65,6 +69,8 @@ header p {
 
 form fieldset {
   border: none;
+  display: grid;
+  gap: 32px;
 }
 
 form .fieldset-wrapper {
@@ -92,7 +98,6 @@ form .fieldset-wrapper legend {
 }
 
 .inputs-wrapper label {
-  text-transform: uppercase;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
   color: #4E4958;
@@ -119,4 +124,28 @@ form .fieldset-wrapper legend {
 
   padding: 0 24px;
 } 
+
+.date-wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.date-wrapper .date-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-wrapper .date-input label {
+  margin-top: 9px
+}
+
+.date-wrapper > div:nth-child(1) {
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 34px;
+  color: #535971;
+}
 
