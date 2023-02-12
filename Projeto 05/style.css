@@ -12,6 +12,7 @@
   --bg-primary: hsl(var(--hue), 22%, 20%);
   --fc-primary: hsl(var(--hue), 0%, 100%);
   --fc-secondary: hsl(var(--hue), 50%, 80%);
+  --fc-secondary-dark: hsla(var(--hue), 100%, 11%, 1);
 
   font-size: 62.5%;
   --fs-body: 1.6rem;
@@ -29,6 +30,11 @@ body {
 .page {
   max-width: 33rem;
   margin: 0 auto;
+}
+
+main {
+  display: grid;
+  gap: 3.2rem;
 }
 
 img {
@@ -67,10 +73,44 @@ header h1 {
 .card img {
   height: 41.6rem;
   object-fit: cover;
+  
+  font-family: var(--ff-heading);
+  
+  border-radius: 6px;
+  transition: all 200ms;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
 }
 
 .card h2 {
   position: absolute;
   bottom: 5.2rem;
   left: 2.8rem;
+
+  font-weight: 800;
+  font-size: var(--fs-heading);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+
+}
+
+.card h2 span {
+  background-color: var(--fc-primary);
+  color: var(--fc-secondary-dark);
+
+  font-size: var(--fs-body);
+  font-weight: 400;
+
+  border-radius: 2rem;
+  padding: 0 1.6rem;
+  height: 3.8rem;
+
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
 }
