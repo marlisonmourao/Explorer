@@ -5,11 +5,14 @@
 }
 
 :root {
-  --fm-texting: font-family: 'Palanquin', sans-serif;
-  --fm-heading: font-family: 'Staatliches', cursive;
+  --fm-texting: 'Staatliches', cursive;
+  --fm-heading: 'Palanquin', sans-serif;
 
   --bg-header: #8E9AAF;
-  --white: #FFFFFF
+  --fc-heading: hsla(0, 0%, 100%, 1);
+  --fc-body: hsla(274, 84%, 12%, 1);
+  --white: #FFFFFF;
+  --bg-body: #EFF1FF;
   
   font-size: 62.5%;
   --fs-body: 1.6rem;
@@ -20,10 +23,13 @@ body {
   font-size: var(--fs-body);
 
   font-size: var(--fs-body);
+
+  background-color: var(--bg-body);
 }
 
 .page {
   margin: 0 auto;
+  max-width: 32rem;
 }
 
 header .logo {
@@ -31,7 +37,6 @@ header .logo {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width: 100%; */
 
   background-color: var(--bg-header);
 
@@ -50,16 +55,84 @@ header h1 {
 
   font-family: var(--fm-heading);
   font-weight: 400;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
 
   line-height: 34px;
   letter-spacing: 0.05em;
 
-  color: #FFFFFF;
+  color: var(--fc-heading);
   background-color: #CBC0D3;
 
   text-transform: uppercase;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding: 0.8rem 0
+}
+
+main {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--fc-body);
+
+  padding-bottom: 5rem;
+}
+
+main p {
+  font-family: var(--fm-heading);
+  font-size: 2rem;
+  line-height: 20px;
+}
+
+.cards {
+  margin-top: 6.3rem;
+  display: grid;
+  gap: 3.2rem;
+
+  grid-template-areas: "A B" "C D";
+}
+
+.cards .card:nth-child(1) {
+  grid-area: A;
+}
+
+.cards .card:nth-child(2) {
+  grid-area: B;
+}
+
+.cards .card:nth-child(3) {
+  grid-area: C;
+}
+
+.cards .card:nth-child(4) {
+  grid-area: D;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  
+  border-radius: 20px;
+}
+
+.card div:nth-child(2) {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  background-color: #FEEAFA;
+  padding: 1rem 2.3rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.card h3 {
+  font-family: var(--fm-texting);
+  font-size: 2rem;
+  color: #4A4E69;
+  letter-spacing: 0.5;
 }
