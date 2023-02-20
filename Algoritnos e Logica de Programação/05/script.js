@@ -2,7 +2,6 @@
 
 let result = prompt("Adivinhe o número que estou pensando? Está entre 0 e 10")
 const randomNumber = Math.round(Math.random() * 10)
-// const match = Number(result) != randomNumber
 
 let xAttempts = 1
 
