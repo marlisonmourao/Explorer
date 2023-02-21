@@ -12,7 +12,7 @@ const patients = [
     height: 178,
   },
   {
-    name: "Vanessa",
+    name: "Jessica",
     age: 29,
     weight: 67,
     height: 155,
