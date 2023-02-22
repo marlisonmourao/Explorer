@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.2%;
+
+  --tt-heading: rgba(52, 53, 91, 1);
+  --tt-body: #34355B;
+  --tt-message: #000000;
+  --white: #FFFFFF;
+  --bg-button: #FF9500
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%); 
+}
+
+.open {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+  width: min(42.8rem, 90%);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+  text-align: center;
+}
+
+.card h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: var(--tt-heading);
+  margin-bottom: 1.4rem;
+}
+
+.card p {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--tt-body);
+  margin-bottom: 2.6rem;
+}
+
+.card button {
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* screen2 */
+.screen2 p {
+  font-family: 'Dancing Script';
+  font-size: 2.4rem;
+  color: var(--tt-message);
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  padding: 1rem;
+
+  animation: topdown 2s forwards;
+}
+
+.screen2 h2 {
+  color: var(--tt-heading);
+  font-family: 'Montserrat';
+}
+
+.screen2 button {
+  border: none;
+  padding: 1.6rem;
+  background-color: var(--bg-button);
+  border-radius: .4rem;
+  color: var(--white);
+  font-size: 1.5rem;
+
+  transition: background .3s;
+}
+
+.screen2 button:hover {
+  background-color: #e18504;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-17px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 400px) {
+  
+}
