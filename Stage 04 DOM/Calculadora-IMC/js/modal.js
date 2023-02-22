@@ -11,4 +11,5 @@ export const Modal = {
   },
 };
 
-Modal.btnClose.onclick = () => Modal.close();
+Modal.btnClose.onclick = () => Modal.close()
+

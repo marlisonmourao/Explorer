@@ -1,9 +1,8 @@
-import { Modal } from "./modal"
+import { Modal } from "./modal.js";
 
 const form = document.querySelector('form')
 const inputWeight = document.querySelector('#weight')
 const inputHeight = document.querySelector('#height')
-
 
 form.onsubmit = event => {
   event.preventDefault();
