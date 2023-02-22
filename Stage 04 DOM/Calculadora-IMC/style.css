@@ -160,3 +160,30 @@ button:hover {
 .modal button:hover {
   transform: scale(1.1);
 }
+
+.alert-error.open {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+.alert-error {
+  position: absolute;
+  background-color: var(--bg-error);
+  top: 0;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+  color: var(--tt-error);
+
+  padding: .8rem 0;
+  font-weight: bold;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transform: translateY(-30px);
+  transition: transform .5s;
+}
