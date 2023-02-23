@@ -21,9 +21,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![PRO2-1](https://user-images.githubusercontent.com/94652702/218363797-62de348f-f459-4876-9943-dfb474fb4f97.png)
 
 <br>
-Link do Figma: 
+[Link do Figma](https://www.figma.com/file/SQogdymNTXHyzf3uOrVpXu/Biscoito-da-Sorte-(Community)?node-id=104%3A2&t=7WA4ObhiUOftNC8Q-0)
 <br>
-https://www.figma.com/file/SQogdymNTXHyzf3uOrVpXu/Biscoito-da-Sorte-(Community)?node-id=104%3A2&t=7WA4ObhiUOftNC8Q-0
 
 <br>
 
