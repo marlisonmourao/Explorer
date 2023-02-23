@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Focus Timer</title>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-<body>
+  <body>
+    <main>
+      <div id="timer">
+        <span class="minutes">25</span>
+        <span>:</span>
+        <span class="seconds">00</span>
+      </div>
+      <div id="controls">
+        <button class="play">
+          <img src="assets/player.svg" alt="" />
+        </button>
+        <button class="pauser hide">
+          <img src="assets/pauser.svg" alt="" />
+        </button>
+        <button class="stop hide">
+          <img src="assets/stop.svg" alt="" />
+        </button>
+        <button class="set">
+          <img src="assets/set.svg" alt="" />
+        </button>
+      </div>
+    </main>
 
-  <main>
-    <div id="timer">
-      <span class="minutes">25</span>
-      <span>:</span>
-      <span class="seconds">00</span>
-    </div>
-    <div id="controls">
-      <button class="play">
-        <img src="assets/player.svg" alt="">
+    <footer>
+      <button class="sound-on">
+        <img src="assets/sound-on.svg" alt="" />
       </button>
-      <button class="pauser hide">
-        <img src="assets/pauser.svg" alt="">
+      <button class="sound-off hide">
+        <img src="assets/sound-off.svg" alt="" />
       </button>
-      <button class="stop hide">
-        <img src="assets/stop.svg" alt="">
-      </button>
-      <button class="set">
-        <img src="assets/set.svg" alt="">
-      </button>
-    </div>
-  </main>
-
-  <footer>
-    <button class="sound-on">
-      <img src="assets/sound-on.svg" alt="">
-    </button>
-    <button class="sound-off hide">
-      <img src="assets/sound-off.svg" alt="">
-    </button>
-  </footer>
+    </footer>
   </body>
 </html>
