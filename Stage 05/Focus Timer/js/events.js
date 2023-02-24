@@ -30,13 +30,13 @@ export default function ({ controls, sound, timer,}) {
     buttonSoundOn.classList.remove("hide");
     buttonSoundOff.classList.add("hide");
 
-    sound.bgAudio.pause();
+    sound.bgAudio.pause()
   });
 
   buttonSoundOn.addEventListener("click", () => {
     buttonSoundOn.classList.add("hide");
     buttonSoundOff.classList.remove("hide");
-    sound.bgAudio.play();
+    sound.bgAudio.play()
   });
 
   buttonSet.addEventListener("click", () => {
