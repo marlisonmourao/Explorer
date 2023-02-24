@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-body: #FFFFFF;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+
+  background: var(--bg-body);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 32.1rem 30.8rem;
+  gap: 19.2rem;
+  max-width: 82.1rem;
+}
+ 
+#countdown {
+  max-width: 32.1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem;
+}
+
+#timer {
+  font-size: 12.7rem;
+  line-height: 14.8rem;
+  color: #323238;
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  gap: 4rem;
+}
+
+.controls button {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  transition: transform .2s;
+}
+
+.controls button:hover {
+  transform: scale(1.1);
+}
+
+.controls-sound {
+  width: fit-content;
+  display: grid;
+  grid-template-areas: 'colA colB';
+  gap: 3.2rem;
+}
+
+.card-sound {
+  height: 11.8rem;
+  width: 11.2rem;
+  background-color: #E1E1E6;
+  border-radius: 2.4rem;
+
+  display: grid;
+  place-items: center;
+  border: none;
+
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.controls-sound button:hover {
+  transform: scale(1.1);
+}
