@@ -1,18 +1,22 @@
 export function Timer({
   minutesDisplay,
   secondsDisplay,
-  timerTimeout,
   resetControls,
-  minutes
 }) {
+
+  let timerTimeout;
+  let minutes = Number(minutesDisplay.textContent);
   
   function reset() {
     updateDisplay(minutes, 0);
     clearTimeout(timerTimeout);
   }
 
-  function updateDisplay(minutes, seconds) {
-    minutesDisplay.innerText = String(minutes).padStart(2, "0");
+  function updateDisplay(newMinutes, seconds) {
+    newMinutes = newMinutes === undefined ? minutes : newMinutes
+    seconds = seconds === undefined ? 0 : seconds
+
+    minutesDisplay.innerText = String(newMinutes).padStart(2, "0");
     secondsDisplay.innerText = String(seconds).padStart(2, "0");
   }
 
@@ -23,13 +27,14 @@ export function Timer({
 
       updateDisplay(minutes, 0);
 
-      if (minutes <= 0) {
-        resetControls();
+      if (minutes <= 0 && seconds <= 0) {
+        resetControls()
+        updateDisplay()
         return;
       }
 
       if (seconds <= 0) {
-        seconds = 2;
+        seconds = 5;
         --minutes;
       }
 
@@ -39,11 +44,21 @@ export function Timer({
     }, 1000);
   }
 
+  function updateMinutes(newMinutes) {
+    minutes = newMinutes;
+  }
+
+  function hold() {
+    clearTimeout(timerTimeout);
+  }
+
   return {
     countdown,
     reset,
-    updateDisplay
-  }
+    updateDisplay,
+    updateMinutes,
+    hold,
+  };
 }
 
 
