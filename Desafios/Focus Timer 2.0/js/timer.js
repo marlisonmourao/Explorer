@@ -1,3 +1,7 @@
+import { BgSounds } from "./sounds.js"
+
+const { bgAudioTimerEnd } = BgSounds()
+ 
 export function Timer({ minutesDisplay, secondsDisplay }) {
   let timerTimerOut
   let minutes = Number(minutesDisplay.textContent)
@@ -7,13 +11,16 @@ export function Timer({ minutesDisplay, secondsDisplay }) {
     let seconds = Number(secondsDisplay.textContent)
 
     timerTimerOut = setTimeout(() => {
-      if (minutes <= 0 && seconds <= 0) {
-        hold()
-        return
+      const isFinished = minutes <= 0 && seconds <= 0
+
+      if (isFinished) {
+        bgAudioTimerEnd()
+        hold();
+        return;
       }
 
       if (seconds <= 0) {
-        seconds = 2
+        seconds = 3
         --minutes
       }
 

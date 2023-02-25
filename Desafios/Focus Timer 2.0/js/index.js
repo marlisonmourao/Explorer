@@ -1,8 +1,8 @@
 import { Timer } from "./timer.js";
 import { Element } from "./element.js";
-import { Sound } from "./element.js";
 import { BgSounds } from "./sounds.js";
-
+import { CardSelected } from "./card-button.js";
+import { EventCard } from "./event-card.js";
 
 const {
   btnPlay,
@@ -14,7 +14,6 @@ const {
   btnMusicFirePlace,
   btnMusicRain
 } = Element();
-const {  } = Element();
 
 
 const minutesDisplay = document.querySelector(".minutes");
@@ -24,7 +23,7 @@ const configTimer = { minutesDisplay, secondsDisplay };
 
 const timer = Timer(configTimer);
 
-const { bgAudioFlorest, bgAudioCoffeeShop, bgAudioFirePlace, bgAudioRain, bgAudioTimerEnd } = BgSounds()
+const { bgAudioFlorest, bgAudioCoffeeShop, bgAudioFirePlace, bgAudioRain } = BgSounds()
 
 btnPlay.addEventListener("click", timer.coutdown);
 btnStop.addEventListener("click", timer.hold);
@@ -33,17 +32,17 @@ btnSubtract.addEventListener("click", timer.subtractTimer);
 
 
 btnMusicFlorest.addEventListener("click", () => {
-  bgAudioFlorest();
+   EventCard().FlorestCard()
 });
 
 btnMusicCoffeeShop.addEventListener("click", () => {
-  bgAudioCoffeeShop();
+   EventCard().CoffeeShopCard();
 });
 
 btnMusicFirePlace.addEventListener("click", () => {
-  bgAudioFirePlace();
+   EventCard().FirePlaceCard();
 });
 
 btnMusicRain.addEventListener("click", () => {
-  bgAudioRain();
+   EventCard().RainCard();
 });
