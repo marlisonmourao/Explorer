@@ -12,6 +12,8 @@ let secondsDisplay = document.querySelector(".seconds");
 
 btnPlay.addEventListener("click", coutdown);
 btnStop.addEventListener("click", hold);
+btnAdd.addEventListener("click", addTimer);
+btnSubtract.addEventListener("click", subtractTimer);
 
 let timerTimerOut
   let minutes = Number(minutesDisplay.textContent);
@@ -23,7 +25,8 @@ function coutdown() {
   timerTimerOut = setTimeout(() => {
 
     if(minutes <= 0 && seconds <= 0) {
-      return console.log('fjskj')
+      hold()
+      return
     }
 
     if (seconds <= 0) {
@@ -46,3 +49,12 @@ function hold() {
   updateDisplay(minutes, 0);
   clearTimeout(timerTimerOut)
 }
+
+function addTimer() {
+ updateDisplay(++minutes, 0)
+}
+
+function subtractTimer() {
+  updateDisplay(--minutes, 0);
+}
+
