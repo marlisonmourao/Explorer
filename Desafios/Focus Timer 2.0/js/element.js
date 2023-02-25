@@ -3,20 +3,30 @@ export function Element() {
   const btnStop = document.querySelector(".stop");
   const btnAdd = document.querySelector(".add");
   const btnSubtract = document.querySelector(".subtract");
-  const btnMusicDay = document.querySelector(".day");
+
+  const btnMusicFlorest = document.querySelector(".florest");
   const btnMusicRain = document.querySelector(".rain");
-  const btnMusicTavern = document.querySelector(".tavern");
-  const btnMusicFire = document.querySelector(".fire");
+  const btnMusicCoffeeShop = document.querySelector(".coffeeShop");
+  const btnMusicFirePlace = document.querySelector(".fireplace");
 
   return {
     btnPlay,
     btnStop,
     btnAdd,
     btnSubtract,
-    btnMusicDay,
+    btnMusicFlorest,
     btnMusicRain,
-    btnMusicTavern,
-    btnMusicFire,
+    btnMusicCoffeeShop,
+    btnMusicFirePlace,
   };
-
 }
+
+export const Sound = {
+  Forest: new Audio("../assets/forest.wav"),
+  Rain: new Audio("../assets/rain.wav"),
+  CoffeeShop: new Audio("../assets/coffee-shop.wav"),
+  Fireplace: new Audio("../assets/fireplace.wav"),
+  TimeEnd: new Audio(
+    "https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true"
+  ),
+};
