@@ -1,7 +1,8 @@
-const btnPlay = document.querySelector(".play");
-const btnStop = document.querySelector(".stop");
-const btnAdd = document.querySelector(".add");
-const btnSubtract = document.querySelector(".subtract");
+import { Timer } from "./timer.js";
+import { Element } from "./element.js";
+
+const { btnPlay, btnStop, btnAdd, btnSubtract } = Element();
+
 const btnMusicDay = document.querySelector(".day");
 const btnMusicRain = document.querySelector(".rain");
 const btnMusicTavern = document.querySelector(".tavern");
@@ -10,51 +11,11 @@ const btnMusicFire = document.querySelector(".fire");
 const minutesDisplay = document.querySelector(".minutes");
 let secondsDisplay = document.querySelector(".seconds");
 
-btnPlay.addEventListener("click", coutdown);
-btnStop.addEventListener("click", hold);
-btnAdd.addEventListener("click", addTimer);
-btnSubtract.addEventListener("click", subtractTimer);
+const configTimer = { minutesDisplay, secondsDisplay };
 
-let timerTimerOut
-  let minutes = Number(minutesDisplay.textContent);
+const timer = Timer(configTimer);
 
-function coutdown() {
-  let minutes = Number(minutesDisplay.textContent);
-  let seconds = Number(secondsDisplay.textContent);
-
-  timerTimerOut = setTimeout(() => {
-
-    if(minutes <= 0 && seconds <= 0) {
-      hold()
-      return
-    }
-
-    if (seconds <= 0) {
-      seconds = 2;
-      --minutes;
-    }
-
-    updateDisplay(minutes, String(seconds - 1))
-
-    coutdown();
-  }, 1000);
-}
-
-function updateDisplay(newMinutes, seconds) {
-  minutesDisplay.innerText = String(newMinutes).padStart(2, "0");
-  secondsDisplay.innerText = String(seconds).padStart(2, "0");
-}
-
-function hold() {
-  updateDisplay(minutes, 0);
-  clearTimeout(timerTimerOut)
-}
-
-function addTimer() {
- updateDisplay(++minutes, 0)
-}
-
-function subtractTimer() {
-  updateDisplay(--minutes, 0);
-}
-
+btnPlay.addEventListener("click", timer.coutdown);
+btnStop.addEventListener("click", timer.hold);
+btnAdd.addEventListener("click", timer.addTimer);
+btnSubtract.addEventListener("click", timer.subtractTimer);
