@@ -56,11 +56,12 @@ class NotesController {
   }
 
   async index(request, response) {
-    const { user_id } = request.query
+    const { user_id, text } = request.query
 
     const notes = await knex("notes")
     .where({ user_id })
-    .orderBy("text")
+    .whereLike("text", `%${text}%`)
+    .orderBy("text");
 
     return response.json(notes)
 
