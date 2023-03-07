@@ -8,10 +8,10 @@ const ensureAuthenticated = require("../Middleware/ensureAuthenticated")
 
 const userRoutes = Router()
 
-const upload = multer(uploadConfig.MULTER);
-
 const usersController = new UsersController()
 const userAvatarController = new UserAvatarController()
+
+const upload = multer(uploadConfig.MULTER)
 
 userRoutes.post("/", usersController.create)
 userRoutes.put("/", ensureAuthenticated, usersController.update)
